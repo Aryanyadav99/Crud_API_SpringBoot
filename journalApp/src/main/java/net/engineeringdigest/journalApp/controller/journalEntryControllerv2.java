@@ -1,13 +1,15 @@
 package net.engineeringdigest.journalApp.controller;
 
-import net.engineeringdigest.journalApp.controller.entity.journalEntry;
+import net.engineeringdigest.journalApp.entity.journalEntry;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 @RestController
-@RequestMapping("/journal")
-public class journalEntryController {
+@RequestMapping("/_journal")
+public class journalEntryControllerv2 {
     private HashMap<Long, journalEntry> journalentries=new HashMap<>();
 
     @GetMapping
